@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamovie - Movies Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.postimg.cc/2688H1tC/1260061.jpg'); /* رابط الصورة لـ Game of thrones */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* لون النص */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #c0c0c0; /* لون الشعار */
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #c0c0c0; /* لون روابط القائمة */
+            text-decoration: none;
+        }
+
+        .login {
+            background-color: #303030; /* لون خلفية الصندوق */
+            color: #c0c0c0; /* لون النص في الصندوق */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #c0c0c0; /* لون حدود الحقول */
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #ff4500; /* لون خلفية زر الإرسال */
+            color: #fff; /* لون نص زر الإرسال */
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #e63c00; /* لون خلفية زر الإرسال عند التحويم */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Hamovie</div>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">الأفلام</a>
+            <a href="#">المسلسلات</a>
+            <a href="#">تسجيل الدخول</a>
+            <a href="#">تسجيل</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>مرحبًا بك في Hamovie</h1>
+        <p>استمتع بمشاهدة الآلاف من الأفلام والمسلسلات على منصتنا!</p>
+
+        <div class="login">
+            <h2>تسجيل الدخول</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">اسم المستخدم</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="تسجيل الدخول">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
